@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login form</title>
+
+    <style>
+        .loginbox{
+            position: fixed;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 393px;
+            height: 430px;
+            padding: 18px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
+
 </head>
 <body>
     <h1> hello github</h1>
       <h1> welcome github</h1>
     
-    
+      <div class="loginbox">
+        <h2>Login Form</h2></br>
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <p>Email address:</p>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                <br>
+                <small id="e_error" class="form-group">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <p>Password:</p>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                
+            </div>
+
+            <div class="form-group">
+                <p>User Type:</p>
+                <select name="user_type" id="user_type" required>
+                    <option value="">SELECT</option>
+                    <option value="USER">USER</option>
+                    <option value="ADMIN">ADMIN</option>
+                </select>                   
+           
+            </div>
+            <br>
+
+            <div class="logbtn">
+                <input type="submit" name="submit" style="width: 100%;background-color: aqua;" value="Register" class="registerbtn">
+            </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="Registration.html">Sign in</a>.</p>
+        </div>
+
+        </form>
+    </div>
     
 </body>
 </html>
